@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+}
+ol{
+    margin: 5px;
+}
+h1{
+  text-align: center;
+  padding-bottom:20px;
+  border-bottom: 2px solid black;
+}
+a{
+  color:gray;
+  text-decoration:none;
+}
+#main{
+  	display: grid;
+    grid-template-columns:350px 1fr;
+}
+#main #main_list{
+  border-right: 2px solid black;
+  margin: 5px;
+  width: 300px;
+}
+#main #article{
+ padding:20px;
+}

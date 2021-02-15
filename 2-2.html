@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title>겨울 방학 계획-JAVA</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+  <h1><a href="index.html">나의 공부 목록</a></h1>
+
+  <div id="main">
+    <div id="main_list">
+      <ol>
+        <li><a href="1.html">나의 다짐</a></li>
+        <li><a href="2.html">JAVA</a></li>
+        <li><a href="3.html">WEB</a></li>
+        <li><a href="4.html">MACHINE LEARNING</a></li>
+      </ol>
+
+
+      <h2>JAVA</h2>
+      <ol>
+        <li><a href="2-1.html">JAVA-기본문법</a></li>
+        <li><a href="2-2.html">JAVA-제어문</a></li>
+        <li><a href="2-3.html">JAVA-method</a></li>
+        <li><a href="2-4.html">JAVA-객체지향 프로그래밍</a></li>
+        <li><a href="2-5.html">JAVA-상속</a></li>
+        <li><a href="2-6.html">JAVA-안드로이드 스튜디오로 앱 만들기</a></li>
+      </ol>
+    </div>
+
+    <div id="article">
+      <h3><a href="https://opentutorials.org/course/3975" title="강좌로 이동" target="_blank">JAVA 제어문</a></h3>
+
+      <h4>JAVA 제어문-첫째 날[21.01.04]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3975/26782" target="_blank">종합응용과 수업을 마치며까지</a></p>
+
+      <p style="margin-top:40px">제어문(조건문, 반복문)은 기본적으로 C언어와 유사!<br>ex) if(a<2)</p>
+
+      <p style="margin-top:40px">비교 연산자 == 대신에 equals 사용 가능! BUT 차이점 알아야!<br><br><img src="java_equals.png">
+        <ol>
+          <li>일반적인 방법으로 변수 정의 내렸을 경우<br>: 만약 두 변수가 같은 값을 가진다면 같은 주소를 가리키는 것으로 생각됨. 따라서 == 맞음! </li>
+          <li>new를 통해 변수 정의 내렸을 경우<br>: new로 변수 정의를 내린다면 같은 값을 가져도 다른 주소를 가리키기 때문에 == 성립 불가. 그러나 값은 같기 때문에 equals 메소드는 True 값 반환! </li>
+        </ol>
+        <br>-> 즉 비교 연산자 ==는 같은 주소를 가리킬 때 True 성립! equals 메소드는 주소가 다르더라도 값이 같으면 True 반환!
+      </p>
+
+      <p style="margin-top:40px">eclipse 에서의 주석 처리<br>ctrl+/ (이런 작은 단축키들이 모여 빠른 코드 작성을 만들지만, 나는 익숙하지가 않아 기록해둔다ㅜ)</p>
+
+      <p style="margin-top:40px">반복문(while, for문)도 C언어와 사용법 동일<br>a++; 과 같은 문법 또한 동일하다. 다른 점은 없을까? </p>
+
+      <p style="margin-top:40px">배열- 이건 좀 C와 다르다! <br>
+        <ol>
+          <li>배열 선언-기본<br>ex) String[] users=new String[3];</li>
+          <li>배열 선언-하드 코딩<br>ex) int[] scores={10,100,1000}; </li>
+        </ol>
+      </p>
+
+      <p style="margin-top:40px">이렇게 해서 JAVA의 기본적인 제어문까지 배웠다! 왜 다들 언어 공부할 때 Python->C->JAVA 순으로 하라고 하는지 알 것 같다. 진짜 파이썬을 배워두면 C가 훨씬 쉽고 C를 배워두면 JAVA가 훨씬 쉬워지는 것 같다. 아직 JAVA를 많이 배운 건 아니지만 뒷 부분 가면 객체 지향 프로그래밍에 대해서 배울 것 같은데 그 부분은 또 Python과 유사하지 않을까 싶다! <br><br></p>
+    </div>
+
+
+</body>
+</html>

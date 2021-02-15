@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <title>겨울 방학 계획-WEB</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+  <h1><a href="index.html">나의 공부 목록</a></h1>
+
+  <div id="main">
+    <div id="main_list">
+      <ol>
+        <li><a href="1.html" >나의 다짐</a></li>
+        <li><a href="2.html" >JAVA</a></li>
+        <li><a href="3.html" >WEB</a></li>
+        <li><a href="4.html" >MACHINE LEARNING</a></li>
+      </ol>
+
+
+      <h2>WEB</h2>
+      <ol>
+        <li><a href="3-1.html">html</a></li>
+        <li><a href="3-2.html" >css</a></li>
+        <li><a href="3-3.html">javascript</a></li>
+      </ol>
+    </div>
+    <div id="article">
+      <h3><a href="https://opentutorials.org/course/3086" title="강좌로 이동" target="_blank">css</a></h3>
+
+
+      <h4>css-첫째 날[21.02.11]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3086/18318" target="_blank">혁명적 변화까지</a></p>
+      <p style="margin-top:40px">html만 쓰는 데에는 한계가 존재한다! -> "CSS"라는 새로운 언어의 등장 계기<br>-html과 달리, 웹에 대한 정보(a, p, h1 태그와 같은...) X-> 디자인에 관한 내용 O</p>
+
+      <p style="margin-top:40px">html과 css는 완전히 다른 언어기 때문에 html 파일이 css가 쓰인다는 것을 알 수 있도록 선언해줘야 함
+        <br>->웹페이지에 css 삽입하는 2가지 방법 존재한다!
+        <ol>
+          <li>style 태그를 사용한다 -> "선택자"=이 웹페이지에 주고 싶은 효과를 누구에게 줄 것이냐 선택!</li>
+          <li>style 속성을 사용한다 = 원하는 특정 태그 내에 직접 넣어준다</li>
+        </ol>
+        <br>1번 style태그를 사용하는 경우엔 head 태그 내에 style이라는 css 태그를 넣어준다 그리고 그 사이에 a{ color:red }를 적어주면, '이 html 파일에 있는 모든 a 태그에 대해 css 문법에 따라 해석하여 color:red를 적용한다'라는 뜻이 된다. 이때 a는 선택자, color:red는 선언(declaration), color는 속성(property), red는 속성값(value)이다. 1번 style 태그를 이용하는 경우에는 한번에 바꿀 수 있으므로 유지 보수나 가독성 면에서 우수하다. 그래서 1번 방법만을 사용하도록 하겠다.
+      </p>
+
+      <h4>css-둘째 날[21.02.12]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3086/18319" target="_blank">박스 모델까지</a></p>
+      <p style="margin-top:40px">1. css 속성 스스로 알아내기<br>-text size 키우고 싶으면 'css text size property' 등으로 검색해서 찾아볼 수 있다!<br>-text center로 옮기고 싶으면 'css text center property' 등으로 검색해서 찾아볼 수 있다.
+        <br>강의 중 배운 css 속성 정리
+        <ol>
+          <li>text-align:글자 배열 조정 (중간으로 옮기는 등...)</li>
+          <li>font-size:글자 크기 조정 </li>
+          <li>padding:컨텐츠와 테두리 사이에 여백을 주고 싶다면</li>
+          <li>margin:테두리와 테두리 사이에 여백을 주고 싶다면</li>
+          <li>border-bottom:박스(4면 테두리)가 아니라 아래(1면 테두리)에만 선 그어주고 싶다면</li>
+          <li>display:어떤 태그가 가리키는 범위를 완전히 바꾸는 중요한 속성!
+            <ul>
+              <li>display:inline; :block level element라고 해도 자기 부피만큼 쓰게 하는 방법 있음</li>
+              <li>display:block; :inline element라고 해도 화면 전체 쓰게하는 방법 있음</li>
+              <li>display:grid; :grid의 장점은 박스 안에 들어가는 글이 많아짐에 따라 자동으로 커지고,  다른 태그로 감싸진 내용도 자동으로 커진다</li>
+              <li>display:none; :안 보이도록</li>
+            </ul>
+          </li>
+        </ol> </p>
+      <p style="margin-top:40px">2. css 선택자 스스로 알아내기<br> -목표: 기본적으로 a태그는 다 검은색으로 바꾸되, 한번 방문한 적이 있는 페이지라면 회색으로 바꾸고 싶다! 지금 현재 방문하고 있는 페이지는 빨간색으로 바꾸고 싶다<br> => 선택자를 사용해도 부분부분 다르게 설정하고 싶다!br>-방법: class나 id와 같은 선택자 이용! </p>
+
+      <p style="margin-top:40px">예시<br>※문제-> 방문했던 페이지가 다수라면 일일이 다 style 속성을 넣어주는 게 불편함!<br>-> 따라서 class="saw"라는 html 태그로 지정하여 한번에 묶을 수 있음 ->"class의 이름이 saw인 것들"이라는 것을 선택자로 표현하려면, 다음과 같이 표현할 수 있다<br> .saw{...}<br>※또한 한번 방문했고, 현재 방문하고 있는 페이지를 빨간 색으로 바꾸고 싶음<br>-> 이를 위해 class="saw active"라는 html 태그로 지정하고 "class의 이름이 active"인것들이라는 선택자는 다음과 같이 표현할 수 있다<br> .active{...}<br>※하지만 위 표현은 약간 더러운 게, class="saw active"의 경우 중복된 통제를 받고, 빨간색이 나오는 이유는 red가 gray보다 뒤에 나왔기 때문<br>그래서 좀 더 우선순위가 높은 선택자를 만들어줄 필요가 있다-> ID 선택자. 위의 class="saw active"를 class="saw" id="active"라고 바꾼다! "id의 이름이 active인 것들"이라는 것을 선택자로 표현하려면, 다음과 같다<br> #active{...}
+        <br>=> 즉 이를 통해, 알 수 있는 것
+        <ol>
+          <li>class라는 속성 값에 여러 개의 값이 들어올 수 있다.</li>
+          <li>또 그 속성 값은 띄어쓰기로 구분한다.</li>
+          <li>하나의 태그에는 여러 개의 속성이 들어올 수 있고</li>
+          <li>여러 개의 선택자를 통해서 하나의 태그를 공동으로 제어할 수 있다.</li>
+          <li>선택자에는 우선순위가 있는데, id, class, 태그 선택자 순으로 강하다 (id의 값은 단 한번만 등장할 수 있다. 중복 불가)</li>
+          <li> 또 우선순위가 같은 선택자가 나온다면, 가장 뒤에 나오는 선택자가 더 우선순위가 높다</li>
+        </ol>
+        +) -id="~~~" 아래 있는 특정 태그 a를 가리키고 싶다면 #~~~ a {...} 이런식으로 써주면 됨
+        <br>=>'css selector'를 검색하면 내가 원하는 범위의 선택자를 알 수 있다.</p>
+
+
+      <p style="margin-top:40px">3. 박스 모델-태그가 가리키는 내용을 감싸는 박스!<br>따라서 화면 전체를 쓰는 태그들을 'block level element' (element==tag), 자기 자신의 부피, 콘텐츠 크기만큼을 갖는 태그들을 'inline element'<br>+중복 제거 방법 <br> -> h1, a{...}</p>
+
+
+
+      <h4>css-셋째 날[21.02.13]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3086/18333" target="_blank">수업을 마치며까지</a></p>
+      <p style="margin-top:40px">4. 그리드-위에서 만든 웹페이지에 글을 나란히 배치하도록 끌어올리고 싶다면? -> 그리드 <br>-여기서 새로운 html 태그 등장! 아무 의미 없는 정보를 담는 태그는 division의 약자인 div 태그 사용! (block level element)<br>아무 의미 없는 정보를 담는 태그는 span 태그 사용! (inline element)
+      <br>-display:grid; 다음에 grid-template-columns 를 써주면 하나의 컬럼에 써줄 수 있음 -> 150px라고 하면 고정적으로 저 부피를 갖게 되고, 1fr이라고 하면 현재 화면 전체를 쓰게 자동으로 조정하는 단위 (2fr 1fr이라고 하면 2:1 비율로 현재 화면의 크기에 맞춰 자동으로 조절됨<br>->grid의 장점은 박스 안에 들어가는 글이 많아짐에 따라 자동으로 커지고, 다른 태그로 감싸진 내용도 자동으로 커진다</p>
+      <p style="margin-top:40px">5. 반응형 디자인: 화면의 크기에 따라서 웹페이지의 각 요소들이 반응해서 최적화된 모양으로 바뀌게 하는 것<br>웹은 수많은 형태의 화면에서 동작해야 함(모든 운영 체제, 기기 등에서!) <br>이 반응형 디자인을 css를 통해서 구현하는 핵심적 개념=미디어 쿼리! @media(~~~) ~~~ 부분이 쿼리!<br>if 화면이 800px이 되지 않는다면? 어떻게 되게 하고 싶다! 화면의 크기가 800px보다 커야 한다==화면의 크기가 최소 800px은 되어야 한다=>min-width:800px <br> @media(min-width:800px){ div{ display:none;}} </p>
+      <p style="margin-top:40px">6. 중복된 css 코드를 가져오기-link 태그를 이용해!<br>link rel="stylesheet" href="style.css"-> link 태그의 역할 style.css이란 파일 다운받아서 원래 여기에 있던 것처럼 동작해<br>+) 개발자 도구로 웹페이지 볼 때, 네트워크라는 것을 클릭하면 해당 html 파일을 리로드했을 떄 내부적으로 어떤 파일들을 웹 서버에 다운받는지 확인할 수 있도록 함</p>
+
+    </div>
+  </div>
+
+</body>
+</html>

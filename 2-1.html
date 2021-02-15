@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <title>겨울 방학 계획-JAVA</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+  <h1><a href="index.html">나의 공부 목록</a></h1>
+
+  <div id="main">
+    <div id="main_list">
+      <ol>
+        <li><a href="1.html">나의 다짐</a></li>
+        <li><a href="2.html">JAVA</a></li>
+        <li><a href="3.html">WEB</a></li>
+        <li><a href="4.html">MACHINE LEARNING</a></li>
+      </ol>
+
+
+      <h2>JAVA</h2>
+      <ol>
+        <li><a href="2-1.html">JAVA-기본문법</a></li>
+        <li><a href="2-2.html">JAVA-제어문</a></li>
+        <li><a href="2-3.html">JAVA-method</a></li>
+        <li><a href="2-4.html">JAVA-객체지향 프로그래밍</a></li>
+        <li><a href="2-5.html">JAVA-상속</a></li>
+        <li><a href="2-6.html">JAVA-안드로이드 스튜디오로 앱 만들기</a></li>
+      </ol>
+    </div>
+
+    <div id="article">
+      <h3><a href="https://opentutorials.org/course/3930" title="강좌로 이동" target="_blank">JAVA 기본문법</a></h3>
+
+      <h4>JAVA 기본문법-첫째 날[20.12.30]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3930/26659" target="_blank">작심삼일 공학까지</a></p>
+
+      <p style="margin-top:40px">아마 이 첫 날이 제일 고비였을 것이다.(ㅋㅋㅋ) 다름이 아니라 컴파일 문제 때문에 자꾸 에러가 나서 진짜 눈물 날 뻔 했다. 우리의 명강사 구 선생(이름은 글이시다)에 아무리 물어봐도 에러가 사라지지 않아 혼자 끙끙거리다가 예전에 언어공학과 문화 컨텐츠 수업에서 KoNLPy을 설치하기 위해 자바를 깐 적 있는데 그 때 시스템 환경 변수 설정 때문에 그런 거 아닌가 싶었다. 그래서 new JAVA project 만들 때, jre에서(물론 jre이 뭔지 모른다 찾아봐야지!) "Use an execution environment JRE" 말고, "Use a project specific JRE"로 설정하니 문제가 해결되었다. 휴 ! 하마터면 JAVA 공부 시작도 하기 전에 포기할 뻔 했다. </p>
+
+      <p style="margin-top:40px"> 자바에서 사용하는 용어 중 혼동하기 쉬운 JVM, JRE, JDK에 대해서 정리해 보자! <br> JVM (Java Virtual Machine)은 자바 소스코드로부터 만들어지는 자바 바이너리 파일(.class)을 실행할 수 있다. 또한 JVM은 플랫폼에 의존적이다. 즉 리눅스의 JVM과 윈도우즈의 JVM은 다르다. 단, 컴파일된 바이너리 코드는 어떤 JVM에서도 동작시킬 수 있다. <br>RE는 자바 실행환경(Java Runtime Environment)의 약자이다. JRE는 JVM 이 자바 프로그램을 동작시킬 때 필요한 라이브러리 파일들과 기타 파일들을 가지고 있다. JRE는 JVM의 실행환경을 구현했다고 할 수 있다.<br>JDK는 자바 개발도구(Java Development Kit)의 약자이다. JDK는 JRE + 개발을 위해 필요한 도구(javac, java등)들을 포함한다.</p>
+
+      <p style="margin-top:40px">위의 jvm을 어디서 많이 봤다 했더니 2학년 1학기 프로젝트로 코틀린을 했을 때 본 것이다! 코틀린은 자바와 100% 호환이 가능한 언어로, 호환이 가능한 이유는 바로 jvm 때문이다! jvm은 Compilation과 Interpretation의 조합이라고 할 수 있다. <br>
+        <ol>
+          <li>JavaC Compiler 에 의한 Compilation : [Java Code -> Byte code (.class)]</li>
+          <li>Interpretating : [Byte code -> 각각의 운영 체제에 맞게 (MAC, 윈도우, 리눅스)]</li>
+        </ol>
+      </p>
+
+      <p style="margin-top:40px">그리고 이 Compilation과 Interpretation을 구분해보자!<br>
+        <ol>
+          <li>Compilation (C, C++, GO, Fortron ...) <br> : Language->Machine Code->Ready to Run<br>:Interpretation보다 빠르나, 플랫폼에 의존적임 (MAC, 리눅스, 윈도우로 컴파일하려면 각각 써야) </li>
+          <li>Interpretation (PYTHON, PHP, JS ...) <br>:Language->Ready to Run->Virtual Machine->Machine Code <br> :interpreter가 알아서 MAC, 윈도우, 리눅스 등으로 변환</li>
+        </ol>
+        <br><br>
+      </p>
+
+      <h4>JAVA 기본문법-둘째 날[21.01.02]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3930/26661" target="_blank">프로그래밍이란?까지</a></p>
+
+      <p style="margin-top:40px">변수(C랑 유사! <u>데이터 타입 먼저 선언!</u>)<br>int, double, String 등이 있음</p>
+      <p style="margin-top:40px">Casting:int를 double로, int를 String으로!<br>1. int->double<br>ex)  double a=(double) 1;<br>2. int->String<br>ex)  String b=Integer.toString(1);</p>
+
+      <p style="margin-top:40px">import하는 방법<br>같은 디렉토리에 파일 넣은 후 (ex. import org.opentutorials.iot.Lighting; ) iot까지가 폴더 이름이고 Lighting은 imprt할 파일!<br>		Lighting hallLamp=new Lighting(id); 라는 코드는 import한 Lighting이라는 새로운 데이터 타입으로 hallLamp라는 변수를 만들어 준다는 뜻! 그리고 변수 hallLamp는 Lighting의 메소드들을 사용할 수 있다.<br><br> </p>
+
+      <h4>JAVA 기본문법-셋째 날[21.01.03]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3930/26664" target="_blank">내 힘으로 컴파일까지</a></p>
+
+      <p style="margin-top:40px">디버거<br>벌레 모양 이모티콘을 눌러 디버그 시작 가능함. F6 (Step Over)을 눌러 한 줄씩 읽을 수 있음. F5(Step into)를 누르면 해당하는 메소드가 속한 java 소스 코드가 열림. 그 이전 상태로 돌아가고 싶으면 F7(Step Return)을 누름. Terminate(ctrl+F2) 누르면 종료 </p>
+
+      <p style="margin-top:40px">입력과 출력<br>ex) String id=JOptionPane.InputDialog(" ")하면 알아서 필요한 라이브러리를 import함.<br>또 String을 double 형으로 바꾸려면 Double.parseDouble()</p>
+
+      <p style="margin-top:40px">이클립스에선 실행 키 밑에 있는 run configurations에 들어가 현재 java 파일을 누르면 Program argumenets에다가 입력값 한꺼번에 넣을 수 있음! 단, 띄어쓰기 단위로 input값이 나뉘기 때문에 띄어쓰기 포함하여 하나로 입력하려면 " "로 묶어야 한다. Apply 누르고 실행하면 끝! 여러 가지 Test Set 하고 싶으면 이름 다르게 저장할 수 있다. 또 Program argumenets에 입력한 값들은 소스 코드에서 args[0], args[1] 등으로 가리킬 수 있는데, 이는 매개변수(parameter) args에다가 argumenets를 넣은 것이기 때문에 그렇다. </p>
+
+      <p style="margin-top:40px">Java 첫째 날에 썼듯이, Java는 java 확장자가 붙은 소스코드가 class 확장자가 붙은 파일로 바뀐다.(compile) 그리고 그 class 파일을 실행하면 프로그램이 돌아간다.(run)</p>
+      <p style="margin-top:40px">이클립스 없이 직접 compile 하기! <br>
+        <o1>
+          <li>시스템 환경 변수-사용자 변수에 있는 path에 java.exe가 있는 경로 입력</li>
+          <li>cmd창에서 cd (실행하고자 하는 hello.java 파일이 있는 디렉토리 경로) 입력하여 이동</li>
+          <li>javac hello.java 하면 hello.class로 compile 가능/ 만약 import한 라이브러리가 같은 디렉토리 내에 없는 파일이라면? (그 대신 lib 디렉토리에 있다 치자) javac -cp ".;lib" hello.java 라고 입력하면 된다. 단, 윈도우는 ; 다른 운영체제는 :로 바꿔준다.</li>
+        </ol>
+        <br><br>
+      </p>
+
+      <h4>JAVA 기본문법-넷째 날[21.01.04]</h4>
+      <p>진도: ~<a href="https://opentutorials.org/course/3930/26665" target="_blank">자바 문서 보는 법까지</a></p>
+
+      <p style="margin-top:40px">구글에 "api documents Java 15" 라고 검색하면 JAVA15에 기본적으로 내장된 패키지(라이브러리)들을 검색 가능하다. (ex. Math 검색하면 class Math가 나오고 이는 java.lang이라는 페키지에 속해 있음ㅇㅇ 그 속엔 class String 등 또한 포함하고 있다. 또, class Math엔 여러 method들과 변수들이 그룹핑되어있다!)</p>
+      <p style="margin-top:40px">저 문서에서 class PrintWriter를 검색해보면<br>java.lang.object<br>-java.io.Writer<br>--java.io.PrintWriter<br>위와 같이 되어 있다. 세번째 클래스는 두번째 클래스를 상속받은 것, 두번째 클래스는 첫번째 클래스를 상속받은 것이다. 따라서 세번째 클래스에서 선언하지 않고 첫번째에서 선언한 toString과 같은 메소드 등을 사용할 수 있다! 세번째 클래스의 toString은 두번째 클래스의 toString을, 두번째 클래스의 toString은 첫번째 클래스의 toString을 "Override"헸다!<br><br></p>
+    <div>
+  <div>
+</body>
+</html>
